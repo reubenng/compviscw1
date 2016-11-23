@@ -38,10 +38,6 @@ public class App {
  * 
  * render words with different font and colour
  * 
- * http://openimaj.org/tutorial/exercises.html
- * @author Reuben Ng
- * @email rdcn1g14@soton.ac.uk
- * @version 1.0
  */
 
 

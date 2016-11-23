@@ -8,9 +8,14 @@ import org.openimaj.image.processing.convolution.FGaussianConvolve;
 import org.openimaj.image.typography.hershey.HersheyFont;
 
 /**
- * OpenIMAJ Hello world!
- *
+ * Chapter 1. Getting started with OpenIMAJ using Maven 
+ * http://openimaj.org/tutorial/exercises.html
+ * 
+ * @author Reuben Ng
+ * @email rdcn1g14@soton.ac.uk
+ * @version 1.0
  */
+
 public class App {
     public static void main( String[] args ) {
     	//Create an image
@@ -27,5 +32,33 @@ public class App {
         
         //Display the image
         DisplayUtilities.display(image);
+
+/**
+ * 1.2.1. Exercise 1: Playing with the sample application 
+ * 
+ * render words with different font and colour
+ * 
+ * http://openimaj.org/tutorial/exercises.html
+ * @author Reuben Ng
+ * @email rdcn1g14@soton.ac.uk
+ * @version 1.0
+ */
+
+
+    	//Create an image
+        image = new MBFImage(550,70, ColourSpace.RGB);
+
+        //Fill the image with white
+        image.fill(RGBColour.BLACK);
+        		        
+        //Render some test into the image
+        image.drawText("OpenIMAJ Exercise 1", 10, 60, HersheyFont.FUTURA_LIGHT, 50, RGBColour.YELLOW);
+
+        //Apply a Gaussian blur
+        image.processInplace(new FGaussianConvolve(2f));
+        
+        //Display the image
+        DisplayUtilities.display(image);
+
     }
 }

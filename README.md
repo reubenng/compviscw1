@@ -1,4 +1,3 @@
-# Computer Vision Coursework 1
-## with OpenIMAJ
+# OpenIMAJ tutorial
 
 http://openimaj.org/tutorial/index.html
